@@ -12,6 +12,7 @@ public class Game {
         System.out.println("Welcome to my text adventure");
         player = new Player();
 
+
       while (true) {
           player.chooseName();
           player.chooseWeapon();
