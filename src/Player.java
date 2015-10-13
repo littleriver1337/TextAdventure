@@ -6,11 +6,16 @@ import java.util.Scanner;
 /**
  * Created by MattBrown on 10/9/15.
  */
-public class Player {
+public class Player extends Character{//extends extends attributes thorugh Character class is called inhertance
     String name;
     String weapon;
     String area;
     ArrayList items = new ArrayList();
+
+    public Player(){
+        health = 100;
+        damage = 20;
+    }
 
     void chooseName() {
         System.out.println("What is your name, traveler?");
@@ -50,7 +55,7 @@ public class Player {
         System.out.println("Found item Pick it up? [y/n]");
         String s = Game.nextLine();
         if (s.equals("y")){
-            System.out.println("You found a " + item);
+            System.out.println(String.format("You found a %s", item));
             items.add(item);
         }
     }

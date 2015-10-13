@@ -13,12 +13,15 @@ public class Game {
         player = new Player();
 
 
-      while (true) {
-          player.chooseName();
-          player.chooseWeapon();
-          player.chooseArea();
-          player.findItem("Shield");
-      }
+
+      player.chooseName();
+      player.chooseWeapon();
+      player.chooseArea();
+      player.findItem("Shield");
+
+      Enemy ogre = new Enemy ("Orge", 50, 15);
+      player.battle(ogre);
+
     }
 
     static String nextLine(){
