@@ -7,7 +7,6 @@ import java.util.Scanner;
  * Created by MattBrown on 10/9/15.
  */
 public class Player extends Character{//extends extends attributes thorugh Character class is called inhertance
-    String name;
     String area;
     ArrayList items = new ArrayList();
 
