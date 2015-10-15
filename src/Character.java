@@ -16,7 +16,7 @@ public class Character {
             System.out.println(String.format("%s health: %d, %s health: %d", name, health, opponent.name, opponent.health));
         }
 
-        String deadMessage = "%s has been killed!";
+        String deadMessage = "%s has been killed!!!!!!";
 
         if (health <= 0){
             System.out.println(String.format(deadMessage, opponent.name));
