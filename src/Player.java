@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Player extends Character{//extends extends attributes thorugh Character class is called inhertance
     String area;
-    ArrayList items = new ArrayList();
+    ArrayList<String> items = new ArrayList();
 
     public Player(){
         health = 100;

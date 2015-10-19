@@ -22,8 +22,9 @@ public class Game {
         player.chooseName();
         player.chooseWeapon();
         player.chooseArea();
-        player.findItem("Shield");
     }
+        player.findItem("Shield");
+        player.findItem("Boots");
 
         Weapon ogreWeapon = new Weapon();
         ogreWeapon.name = "Club";
@@ -50,7 +51,7 @@ public class Game {
                     System.out.println("You have no items!");
                 }
             }
-            for (Object item : player.items) {
+            for (String item : player.items) {
                 System.out.println(item);
             }
             return nextLine();
